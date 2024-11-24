@@ -69,6 +69,7 @@ class Client:
             structure = location["Structure"]
             for device in structure["Devices"]:
                 if device["DeviceID"] == device_id:
+                    self._user_request("")
                     return Device(self, device)
 
         return None

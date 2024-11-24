@@ -50,12 +50,48 @@ class DeviceState:
         internal_device_state = device_state["Device"]
 
         for field in (
+            DeviceStateKeys.ErrorMessages,
+            DeviceStateKeys.HeatPumpFrequency,
             DeviceStateKeys.FlowTemperature,
+            DeviceStateKeys.ReturnTemperature,
+            DeviceStateKeys.FlowTemperatureZone1,
+            DeviceStateKeys.ReturnTemperatureZone1,
+            DeviceStateKeys.FlowTemperatureZone2,
+            DeviceStateKeys.ReturnTemperatureZone2,
+            DeviceStateKeys.FlowTemperatureBoiler,
+            DeviceStateKeys.ReturnTemperatureBoiler,
+            DeviceStateKeys.TankWaterTemperature
+            DeviceStateKeys.UnitStatus
+            DeviceStateKeys.DefrostMode,
+            DeviceStateKeys.HeatingFunctionEnabled,
+            DeviceStateKeys.MixingTankWaterTemperature,
+            DeviceStateKeys.CondensingTemperature,
+            DeviceStateKeys.DemandPercentage,
+            DeviceStateKeys.ConfiguredDemandPercentage
+            DeviceStateKeys.DailyHeatingEnergyConsumed,
+            DeviceStateKeys.DailyHotWaterEnergyConsumed,
+            DeviceStateKeys.DailyHeatingEnergyProduced,
+            DeviceStateKeys.DailyHotWaterEnergyProduced,
+            DeviceStateKeys.DailyLegionellaActivationCounter,
+            DeviceStateKeys.LastLegionellaActivationTime,
+            DeviceStateKeys.DailyEnergyConsumedDate,
+            DeviceStateKeys.DailyEnergyProducedDate,
             DeviceStateKeys.Power,
             DeviceStateKeys.OutdoorTemperature,
             DeviceStateKeys.HotWaterTemperature,
             DeviceStateKeys.OperationModeZone1,
             DeviceStateKeys.ForcedHotWaterMode,
+            DeviceStateKeys.CurrentEnergyConsumed,
+            DeviceStateKeys.CurrentEnergyProduced,
+            DeviceStateKeys.HeatingEnergyConsumedRate1,
+            DeviceStateKeys.HeatingEnergyConsumedRate2,
+            DeviceStateKeys.HotWaterEnergyConsumedRate1,
+            DeviceStateKeys.HotWaterEnergyConsumedRate2,
+            DeviceStateKeys.HeatingEnergyProducedRate1,
+            DeviceStateKeys.HeatingEnergyProducedRate2,
+            DeviceStateKeys.HotWaterEnergyProducedRate1,
+            DeviceStateKeys.HotWaterEnergyProducedRate2,
+            DeviceStateKeys.WifiSignalStrength,
         ):
             self._state[field] = internal_device_state[field]
 
