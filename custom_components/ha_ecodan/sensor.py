@@ -254,7 +254,7 @@ ENTITY_DESCRIPTIONS = (
             name="Daily Hot Water Energy Produced",
             icon="mdi:heat-pump",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
-            device_class=SensorDeviceClass.DATE,
+            device_class=SensorDeviceClass.ENERGY,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyHotWaterEnergyProduced,
     ),
@@ -262,7 +262,6 @@ ENTITY_DESCRIPTIONS = (
             key="ha_ecodan",
             name="Last Legionella Activation Time",
             icon="mdi:heat-pump",
-            native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.DATE,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.LastLegionellaActivationTime,
@@ -274,6 +273,14 @@ ENTITY_DESCRIPTIONS = (
             device_class=SensorDeviceClass.DATE,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyEnergyConsumedDate,
+    )
+    EcodanSensorEntityDescription(
+            key="ha_ecodan",
+            name="Daily Energy Produced Date",
+            icon="mdi:heat-pump",
+            device_class=SensorDeviceClass.DATE,
+            state_class=SensorStateClass.MEASUREMENT,
+            state_key=DeviceStateKeys.DailyEnergyProducedDate,
     )
 )
 
