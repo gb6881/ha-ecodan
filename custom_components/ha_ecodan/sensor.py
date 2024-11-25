@@ -261,7 +261,7 @@ ENTITY_DESCRIPTIONS = (
     EcodanSensorEntityDescription(
             key="ha_ecodan",
             name="Last Legionella Activation Time",
-            icon="mdi:heat-pump",
+            icon="mdi:calendar",
             device_class=SensorDeviceClass.DATE,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.LastLegionellaActivationTime,
@@ -269,7 +269,7 @@ ENTITY_DESCRIPTIONS = (
     EcodanSensorEntityDescription(
             key="ha_ecodan",
             name="Daily Energy Consumed Date",
-            icon="mdi:heat-pump",
+            icon="mdi:calendar",
             device_class=SensorDeviceClass.DATE,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyEnergyConsumedDate,
@@ -277,7 +277,7 @@ ENTITY_DESCRIPTIONS = (
     EcodanSensorEntityDescription(
             key="ha_ecodan",
             name="Daily Energy Produced Date",
-            icon="mdi:heat-pump",
+            icon="mdi:calendar",
             device_class=SensorDeviceClass.DATE,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyEnergyProducedDate,
