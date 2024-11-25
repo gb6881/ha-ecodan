@@ -281,7 +281,6 @@ ENTITY_DESCRIPTIONS = (
             device_class=SensorDeviceClass.DATE,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyEnergyProducedDate,
-            value_fn: 
     )
 )
 
