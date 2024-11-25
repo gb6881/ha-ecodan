@@ -224,7 +224,7 @@ ENTITY_DESCRIPTIONS = (
     ),
     EcodanSensorEntityDescription(
             key="ha_ecodan",
-            name="Daily Heating Energy Consumed",
+            name="Daily Heating Energy Consumed (Yesterday)",
             icon="mdi:meter-electric-outline",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
@@ -233,7 +233,7 @@ ENTITY_DESCRIPTIONS = (
     ),
     EcodanSensorEntityDescription(
             key="ha_ecodan",
-            name="Daily Heating Energy Produced",
+            name="Daily Heating Energy Produced (Yesterday)",
             icon="mdi:heat-pump",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
@@ -242,7 +242,7 @@ ENTITY_DESCRIPTIONS = (
     ),
     EcodanSensorEntityDescription(
             key="ha_ecodan",
-            name="Daily Hot Water Energy Consumed",
+            name="Daily Hot Water Energy Consumed (Yesterday)",
             icon="mdi:meter-electric-outline",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
@@ -251,7 +251,7 @@ ENTITY_DESCRIPTIONS = (
     ),
     EcodanSensorEntityDescription(
             key="ha_ecodan",
-            name="Daily Hot Water Energy Produced",
+            name="Daily Hot Water Energy Produced (Yesterday)",
             icon="mdi:heat-pump",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
