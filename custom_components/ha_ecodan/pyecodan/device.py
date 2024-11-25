@@ -34,6 +34,7 @@ class DeviceStateKeys:
     TankWaterTemperature = "TankWaterTemperature"
     UnitStatus = "UnitStatus"
     DefrostMode = "DefrostMode"
+    OperationMode = "OperationMode"
     HeatingFunctionEnabled = "HeatingFunctionEnabled"
     MixingTankWaterTemperature = "MixingTankWaterTemperature"
     CondensingTemperature = "CondensingTemperature"
@@ -127,6 +128,7 @@ class DeviceState:
             DeviceStateKeys.HotWaterEnergyProducedRate1,
             DeviceStateKeys.HotWaterEnergyProducedRate2,
             DeviceStateKeys.WifiSignalStrength,
+            DeviceStateKeys.OperationMode
         ):
             self._state[field] = internal_device_state[field]
 
