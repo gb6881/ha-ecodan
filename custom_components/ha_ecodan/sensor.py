@@ -106,7 +106,6 @@ ENTITY_DESCRIPTIONS = (
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.CondensingTemperature,
     ),
-
     EcodanSensorEntityDescription(
             key="ha_ecodan",
             name="Heat pump frequencey",
@@ -115,8 +114,6 @@ ENTITY_DESCRIPTIONS = (
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.HeatPumpFrequency,
     ),
-
-
     EcodanSensorEntityDescription(
         key="ha_ecodan",
         name="Outdoor Temperature",
@@ -134,7 +131,7 @@ ENTITY_DESCRIPTIONS = (
         device_class=SensorDeviceClass.TEMPERATURE,
         state_class=SensorStateClass.MEASUREMENT,
         state_key=DeviceStateKeys.HotWaterTemperature,
-    ),
+    )
 )
 
 

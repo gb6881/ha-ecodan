@@ -10,6 +10,10 @@ __pycache__
 .coverage
 .credentials
 coverage.xml
+.idea
+bin
+lib
+pyvenv.cfg
 
 
 # Home Assistant configuration
