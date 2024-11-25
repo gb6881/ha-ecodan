@@ -25,6 +25,8 @@ class DeviceStateKeys:
     ErrorMessages = "ErrorMessages"
     HeatPumpFrequency = "HeatPumpFrequency"
     ReturnTemperature = "ReturnTemperature"
+    FlowTemperatureBoiler = "FlowTemperatureBoiler"
+    ReturnTemperatureBoiler = "ReturnTemperatureBoiler"
     FlowTemperatureZone1 = "FlowTemperatureZone1"
     FlowTemperatureZone2 = "FlowTemperatureZone2"
     ReturnTemperatureZone1 = "ReturnTemperatureZone1"

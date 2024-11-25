@@ -41,7 +41,7 @@ ENTITY_DESCRIPTIONS = (
         native_unit_of_measurement=UnitOfTemperature.CELSIUS,
         device_class=SensorDeviceClass.TEMPERATURE,
         state_class=SensorStateClass.MEASUREMENT,
-        state_key=DeviceStateKeys.FlowTemperatureZOne1,
+        state_key=DeviceStateKeys.FlowTemperatureZone1,
     ),
     EcodanSensorEntityDescription(
         key="ha_ecodan",
