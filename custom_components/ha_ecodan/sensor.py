@@ -273,7 +273,7 @@ ENTITY_DESCRIPTIONS = (
             device_class=SensorDeviceClass.DATE,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyEnergyConsumedDate,
-    )
+    ),
     EcodanSensorEntityDescription(
             key="ha_ecodan",
             name="Daily Energy Produced Date",
@@ -281,6 +281,7 @@ ENTITY_DESCRIPTIONS = (
             device_class=SensorDeviceClass.DATE,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyEnergyProducedDate,
+            value_fn: 
     )
 )
 
