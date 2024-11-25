@@ -22,7 +22,40 @@ class DeviceStateKeys:
     OperationModeZone1 = "OperationModeZone1"
     ForcedHotWaterMode = "ForcedHotWaterMode"
     Power = "Power"
-
+    ErrorMessages = "ErrorMessages"
+    HeatPumpFrequency = "HeatPumpFrequency"
+    ReturnTemperature = "ReturnTemperature"
+    FlowTemperatureZone1 = "FlowTemperatureZone1"
+    FlowTemperatureZone2 = "FlowTemperatureZone2"
+    ReturnTemperatureZone1 = "ReturnTemperatureZone1"
+    ReturnTemperatureZone2 = "ReturnTemperatureZone2"
+    TankWaterTemperature = "TankWaterTemperature"
+    UnitStatus = "UnitStatus"
+    DefrostMode = "DefrostMode"
+    HeatingFunctionEnabled = "HeatingFunctionEnabled"
+    MixingTankWaterTemperature = "MixingTankWaterTemperature"
+    CondensingTemperature = "CondensingTemperature"
+    DemandPercentage = "DemandPercentage"
+    ConfiguredDemandPercentage = "ConfiguredDemandPercentage"
+    DailyHeatingEnergyConsumed = "DailyHeatingEnergyConsumed"
+    DailyHotWaterEnergyConsumed = "DailyHotWaterEnergyConsumed"
+    DailyHeatingEnergyProduced = "DailyHeatingEnergyProduced"
+    DailyHotWaterEnergyProduced = "DailyHotWaterEnergyProduced"
+    DailyLegionellaActivationCounter = "DailyLegionellaActivationCounter"
+    LastLegionellaActivationTime = "LastLegionellaActivationTime"
+    DailyEnergyConsumedDate = "DailyEnergyConsumedDate"
+    DailyEnergyProducedDate = "DailyEnergyProducedDate"
+    CurrentEnergyConsumed = "CurrentEnergyConsumed"
+    CurrentEnergyProduced = "CurrentEnergyProduced"
+    HeatingEnergyConsumedRate1 = "HeatingEnergyConsumedRate1"
+    HeatingEnergyConsumedRate2 = "HeatingEnergyConsumedRate2"
+    HotWaterEnergyConsumedRate1 = "HotWaterEnergyConsumedRate1"
+    HotWaterEnergyConsumedRate2 = "HotWaterEnergyConsumedRate2"
+    HeatingEnergyProducedRate1 = "HeatingEnergyProducedRate1"
+    HeatingEnergyProducedRate2 = "HeatingEnergyProducedRate2"
+    HotWaterEnergyProducedRate1 = "HotWaterEnergyProducedRate1"
+    HotWaterEnergyProducedRate2 = "HotWaterEnergyProducedRate2"
+    WifiSignalStrength = "WifiSignalStrength"
 
 class DevicePropertyKeys:
     """Dictionary keys for device properties."""
@@ -60,14 +93,14 @@ class DeviceState:
             DeviceStateKeys.ReturnTemperatureZone2,
             DeviceStateKeys.FlowTemperatureBoiler,
             DeviceStateKeys.ReturnTemperatureBoiler,
-            DeviceStateKeys.TankWaterTemperature
-            DeviceStateKeys.UnitStatus
+            DeviceStateKeys.TankWaterTemperature,
+            DeviceStateKeys.UnitStatus,
             DeviceStateKeys.DefrostMode,
             DeviceStateKeys.HeatingFunctionEnabled,
             DeviceStateKeys.MixingTankWaterTemperature,
             DeviceStateKeys.CondensingTemperature,
             DeviceStateKeys.DemandPercentage,
-            DeviceStateKeys.ConfiguredDemandPercentage
+            DeviceStateKeys.ConfiguredDemandPercentage,
             DeviceStateKeys.DailyHeatingEnergyConsumed,
             DeviceStateKeys.DailyHotWaterEnergyConsumed,
             DeviceStateKeys.DailyHeatingEnergyProduced,
