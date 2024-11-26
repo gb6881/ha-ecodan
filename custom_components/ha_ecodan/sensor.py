@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+from datetime import datetime
 from homeassistant.const import UnitOfTemperature, UnitOfEnergy
 from homeassistant.components.sensor import SensorEntity, SensorEntityDescription, SensorDeviceClass, SensorStateClass
 
@@ -156,7 +157,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:meter-electric-outline",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.HeatingEnergyConsumedRate1,
     ),
     EcodanSensorEntityDescription(
@@ -165,7 +166,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:heat-pump",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.HeatingEnergyProducedRate1,
     ),
     EcodanSensorEntityDescription(
@@ -174,7 +175,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:meter-electric-outline",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.HeatingEnergyConsumedRate2,
     ),
     EcodanSensorEntityDescription(
@@ -183,7 +184,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:heat-pump",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.HeatingEnergyProducedRate2,
     ),
     EcodanSensorEntityDescription(
@@ -192,7 +193,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:meter-electric-outline",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.HotWaterEnergyConsumedRate1,
     ),
     EcodanSensorEntityDescription(
@@ -201,7 +202,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:heat-pump",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.HotWaterEnergyProducedRate1,
     ),
     EcodanSensorEntityDescription(
@@ -210,7 +211,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:meter-electric-outline",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.HotWaterEnergyConsumedRate2,
     ),
     EcodanSensorEntityDescription(
@@ -219,7 +220,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:heat-pump",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.HotWaterEnergyProducedRate2,
     ),
     EcodanSensorEntityDescription(
@@ -228,7 +229,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:meter-electric-outline",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.DailyHeatingEnergyConsumed,
     ),
     EcodanSensorEntityDescription(
@@ -237,7 +238,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:heat-pump",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.DailyHeatingEnergyProduced,
     ),
     EcodanSensorEntityDescription(
@@ -246,7 +247,7 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:meter-electric-outline",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
+            state_class=SensorStateClass.TOTAL_INCREASING,
             state_key=DeviceStateKeys.DailyHotWaterEnergyConsumed,
     ),
     EcodanSensorEntityDescription(
@@ -255,7 +256,6 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:heat-pump",
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             device_class=SensorDeviceClass.ENERGY,
-            state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyHotWaterEnergyProduced,
     ),
     EcodanSensorEntityDescription(
@@ -263,7 +263,6 @@ ENTITY_DESCRIPTIONS = (
             name="Last Legionella Activation Time",
             icon="mdi:calendar",
             device_class=SensorDeviceClass.DATE,
-            state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.LastLegionellaActivationTime,
     ),
     EcodanSensorEntityDescription(
@@ -271,7 +270,6 @@ ENTITY_DESCRIPTIONS = (
             name="Daily Energy Consumed Date",
             icon="mdi:calendar",
             device_class=SensorDeviceClass.DATE,
-            state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyEnergyConsumedDate,
     ),
     EcodanSensorEntityDescription(
@@ -279,7 +277,6 @@ ENTITY_DESCRIPTIONS = (
             name="Daily Energy Produced Date",
             icon="mdi:calendar",
             device_class=SensorDeviceClass.DATE,
-            state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.DailyEnergyProducedDate,
     )
 )
@@ -289,12 +286,26 @@ async def async_setup_entry(hass, entry, async_add_devices):
     """Set up the sensor platform."""
     coordinator = hass.data[DOMAIN][entry.entry_id]
     async_add_devices(
-        EcodanSensor(
-            coordinator=coordinator,
-            entity_description=entity_description,
-        )
+       createSensor(
+           coordinator,
+           entity_description,
+       )
         for entity_description in ENTITY_DESCRIPTIONS
     )
+
+def createSensor(coordinator,entity_description):
+    match  entity_description.device_class:
+       case SensorDeviceClass.DATE:
+           return  EcodanSensorDate(
+                             coordinator=coordinator,
+                             entity_description=entity_description,
+                   )
+       case _:
+           return EcodanSensor(
+                             coordinator=coordinator,
+                             entity_description=entity_description,
+                   )
+
 
 
 class EcodanSensor(EcodanEntity, SensorEntity):
@@ -310,3 +321,18 @@ class EcodanSensor(EcodanEntity, SensorEntity):
     def native_value(self) -> str:
         """Return the value of the sensor."""
         return self.coordinator.data.get(self.entity_description.state_key)
+
+class EcodanSensorDate(EcodanEntity, SensorEntity):
+    """A Sensor Entity for the Ecodan platform."""
+
+    def __init__(self, coordinator: EcodanDataUpdateCoordinator, entity_description: EcodanSensorEntityDescription):
+        """Create an Ecodan sensor."""
+        super().__init__(coordinator)
+        self.entity_description = entity_description
+        self._attr_unique_id = f"{coordinator.device.id}_{entity_description.state_key}".lower()
+
+    @property
+    def native_value(self) -> datetime:
+        """Return the value of the sensor."""
+        """2024-11-23T00:00:00"""
+        return datetime.fromisoformat(self.coordinator.data.get(self.entity_description.state_key))
