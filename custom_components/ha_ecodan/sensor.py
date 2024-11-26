@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 from datetime import datetime
-from homeassistant.const import UnitOfTemperature, UnitOfEnergy
+from homeassistant.const import UnitOfTemperature, UnitOfEnergy, UnitOfFrequency
 from homeassistant.components.sensor import SensorEntity, SensorEntityDescription, SensorDeviceClass, SensorStateClass
 
 from custom_components.ha_ecodan import EcodanDataUpdateCoordinator, DOMAIN
@@ -118,8 +118,9 @@ ENTITY_DESCRIPTIONS = (
     ),
     EcodanSensorEntityDescription(
             key="ha_ecodan",
-            name="Heat pump frequencey",
+            name="Heat pump frequency",
             icon="mdi:thermometer",
+            native_unit_of_measurement=UnitOfFrequency.HERTZ,
             device_class=SensorDeviceClass.FREQUENCY,
             state_class=SensorStateClass.MEASUREMENT,
             state_key=DeviceStateKeys.HeatPumpFrequency,
