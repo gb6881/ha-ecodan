@@ -72,6 +72,15 @@ ENTITY_DESCRIPTIONS = (
         state_key=DeviceStateKeys.ReturnTemperatureZone2,
     ),
     EcodanSensorEntityDescription(
+                key="ha_ecodan",
+                name="Flow Temperature (Boiler)",
+                icon="mdi:thermometer",
+                native_unit_of_measurement=UnitOfTemperature.CELSIUS,
+                device_class=SensorDeviceClass.TEMPERATURE,
+                state_class=SensorStateClass.MEASUREMENT,
+                state_key=DeviceStateKeys.FlowTemperatureBoiler,
+    ),
+    EcodanSensorEntityDescription(
             key="ha_ecodan",
             name="Return Temperature (Boiler)",
             icon="mdi:thermometer",
