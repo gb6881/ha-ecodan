@@ -288,7 +288,59 @@ ENTITY_DESCRIPTIONS = (
             icon="mdi:calendar",
             device_class=SensorDeviceClass.DATE,
             state_key=DeviceStateKeys.DailyEnergyProducedDate,
-    )
+    ),
+    EcodanSensorEntityDescription(
+            key="ha_ecodan",
+            name="Defrost Mode",
+            icon="mdi:calendar",
+            state_key=DeviceStateKeys.DefrostMode,
+    ),
+    EcodanSensorEntityDescription(
+                 key="ha_ecodan",
+                 name="Unit Status",
+                 icon="mdi:calendar",
+                 state_key=DeviceStateKeys.UnitStatus,
+    ),
+    EcodanSensorEntityDescription(
+                 key="ha_ecodan",
+                 name="Wifi Signal Strength",
+                 icon="mdi:wifi",
+                 device_class=SensorDeviceClass.SIGNAL_STRENGTH,
+                 state_key=DeviceStateKeys.WifiSignalStrength,
+    ),
+    EcodanSensorEntityDescription(
+                 key="ha_ecodan",
+                 name="Power",
+                 icon="mdi:calendar",
+                 state_key=DeviceStateKeys.Power,
+    ),
+    EcodanSensorEntityDescription(
+                 key="ha_ecodan",
+                 name="Error Messages",
+                 icon="mdi:calendar",
+                 state_key=DeviceStateKeys.ErrorMessages,
+    ),
+    EcodanSensorEntityDescription(
+                 key="ha_ecodan",
+                 name="Forced Hot Water Mode",
+                 icon="mdi:calendar",
+                 state_key=DeviceStateKeys.ForcedHotWaterMode,
+    ),
+    EcodanSensorEntityDescription(
+                 key="ha_ecodan",
+                 name="Eco Hot Water",
+                 icon="mdi:calendar",
+                 state_key=DeviceStateKeys.EcoHotWater,
+    ),
+    EcodanSensorEntityDescription(
+                 key="ha_ecodan",
+                 name="Eco Hot Water",
+                 icon="mdi:calendar",
+                 state_key=DeviceStateKeys.DeviceID,
+    ),
+
+
+
 )
 
 

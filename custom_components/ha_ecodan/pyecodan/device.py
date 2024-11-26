@@ -59,6 +59,9 @@ class DeviceStateKeys:
     HotWaterEnergyProducedRate1 = "HotWaterEnergyProducedRate1"
     HotWaterEnergyProducedRate2 = "HotWaterEnergyProducedRate2"
     WifiSignalStrength = "WifiSignalStrength"
+    EcoHotWater = "EcoHotWater"
+    DeviceID = "DeviceID"
+
 
 class DevicePropertyKeys:
     """Dictionary keys for device properties."""
@@ -128,7 +131,9 @@ class DeviceState:
             DeviceStateKeys.HotWaterEnergyProducedRate1,
             DeviceStateKeys.HotWaterEnergyProducedRate2,
             DeviceStateKeys.WifiSignalStrength,
-            DeviceStateKeys.OperationMode
+            DeviceStateKeys.OperationMode,
+            DeviceStateKeys.EcoHotWater,
+            DeviceStateKeys.DeviceID,
         ):
             self._state[field] = internal_device_state[field]
 
